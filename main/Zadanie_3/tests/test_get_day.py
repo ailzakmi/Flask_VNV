@@ -1,7 +1,7 @@
 import unittest
-from app import app
+from ..app import app
 from freezegun import freeze_time
-from get_day import get_day_of_week_name
+from ..get_day import get_day_of_week_name
 
 class TestHelloWorld(unittest.TestCase):
     def create_app(self):

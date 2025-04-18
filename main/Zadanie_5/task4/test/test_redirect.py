@@ -1,8 +1,7 @@
 import unittest
-from contextlib import redirect_stdout, redirect_stderr
 import io
 import sys
-from mod5.task4.redirect import Redirect
+from ..redirect import Redirect
 
 
 class TestRedirect(unittest.TestCase):

@@ -1,6 +1,5 @@
 import unittest
-from app import app
-
+from ..app import app
 
 # task3 Для каждого поля и валидатора в endpoint /registration напишите юнит-тест, который проверит корректность
 # работы валидатора.
@@ -13,7 +12,7 @@ class TestRegistrationForm(unittest.TestCase):
         data = {
             'email': 'test@kuga.com',
             'phone': 1234567890,
-            'name': 'andrey kag',
+            'name': 'anton kaz',
             'address': '123 Test St',
             'index': 12345
         }

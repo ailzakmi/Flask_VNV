@@ -1,6 +1,5 @@
 import unittest
-from mod5.task3.block_errors import BlockErrors
-
+from ..block_errors import BlockErrors
 
 class TestBlockErrors(unittest.TestCase):
     def test_error_ignored(self):

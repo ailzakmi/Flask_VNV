@@ -50,4 +50,4 @@ def execute_code():
 
 if __name__ == '__main__':
     app.config['WTF_CSRF_ENABLED'] = True
-    app.run(debug=True, port=5467)
+    app.run(debug=True, port=5555, host='0.0.0.0')

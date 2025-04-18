@@ -1,6 +1,5 @@
 import sys
 
-
 def decrypt(encryption: str) -> str:
     result: list = []
     dots: int = 0

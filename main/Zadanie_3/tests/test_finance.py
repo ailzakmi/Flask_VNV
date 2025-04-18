@@ -1,6 +1,6 @@
 import unittest
 from collections import defaultdict
-from app import app
+from ..app import app
 
 class TestExpenses(unittest.TestCase):
     def setUp(self):

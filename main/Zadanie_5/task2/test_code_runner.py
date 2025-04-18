@@ -1,6 +1,5 @@
 import unittest
-from mod5.task2.code_runner import app
-
+from code_runner import app
 
 class TestCodeRunner(unittest.TestCase):
     valid_code_and_timeout = {

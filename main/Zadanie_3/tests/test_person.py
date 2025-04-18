@@ -30,7 +30,7 @@ class Person:
 
 class TestPerson(unittest.TestCase):
     def setUp(self):
-        self.person_with_address = Person("Andrey", 1990, "yekaterinburg")
+        self.person_with_address = Person("Anton", 1990, "irbit")
         self.person_without_address = Person("Alice", 1985)
 
     def test_get_age(self):
@@ -39,19 +39,19 @@ class TestPerson(unittest.TestCase):
         self.assertEqual(self.person_without_address.get_age(), current_year - 1985)
 
     def test_get_name(self):
-        self.assertEqual(self.person_with_address.get_name(), "Andrey")
+        self.assertEqual(self.person_with_address.get_name(), "Anton")
         self.assertEqual(self.person_without_address.get_name(), "Alice")
 
     def test_set_name(self):
-        self.person_with_address.set_name("Anton")
-        self.assertEqual(self.person_with_address.get_name(), "Anton")
+        self.person_with_address.set_name("Sergei")
+        self.assertEqual(self.person_with_address.get_name(), "Sergei")
 
     def test_set_address(self):
         self.person_without_address.set_address("moscow")
         self.assertEqual(self.person_without_address.get_address(), "moscow")
 
     def test_get_address(self):
-        self.assertEqual(self.person_with_address.get_address(), "yekaterinburg")
+        self.assertEqual(self.person_with_address.get_address(), "irbit")
         self.assertIsNone(self.person_without_address.get_address(), "")
 
     def test_is_homeless(self):

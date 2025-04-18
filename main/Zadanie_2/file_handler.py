@@ -1,6 +1,5 @@
 import os
 
-
 def get_preview(size, relative_path):
     abs_path = os.path.abspath(relative_path)
 
